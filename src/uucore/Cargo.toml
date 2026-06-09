@@ -115,7 +115,7 @@ xattr = { workspace = true, optional = true }
 procfs = { workspace = true, optional = true }
 
 [target.'cfg(target_os = "windows")'.dependencies]
-wild = "2.2.1"
+wild = { git = "https://github.com/a-rookie-of-C-language/wild", rev = "fbb73c1449aed33f7be0c58435b8055f9d9f900f" }
 winapi-util = { workspace = true, optional = true }
 windows-sys = { workspace = true, optional = true, default-features = false, features = [
   "Wdk_System_SystemInformation",
